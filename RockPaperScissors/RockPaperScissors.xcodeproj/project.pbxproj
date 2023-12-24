@@ -19,6 +19,7 @@
 		0F4DD2D52B32BCB600A9B263 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F4DD2D72B32BCB900A9B263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4DD2DA2B32BCB900A9B263 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F97FD272B381BA1001AA205 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		0F4DD2D22B32BCB600A9B263 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
+				0F97FD272B381BA1001AA205 /* README.md */,
 				0F4DD2D32B32BCB600A9B263 /* RockPaperScissorsApp.swift */,
 				0F4DD2D52B32BCB600A9B263 /* ContentView.swift */,
 				0F4DD2D72B32BCB900A9B263 /* Assets.xcassets */,
