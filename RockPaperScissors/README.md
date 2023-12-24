@@ -1,6 +1,7 @@
-![Screenshot 2023-12-20 at 5 14 35 PM](https://github.com/tahadarwesh1/swiftUi/assets/58812384/18d01476-24a6-4392-991b-f85077f924c4)
 # RockPaperScissors Project 
 This is a simple app I created following the requirements of Day 25 of 100 Days of SwiftUI. This isn't a tutorial app, but a challenge day with the app being made from scratch on my end. The application will randomly select either Rock, Paper, or Scissors. It will then randomly select "Win" or "Lose", and proceed to ask the user which option listed would either win or lose based on the randomly selected option. It's meant to be a brain teaser for the user.
+
+![Screenshot 2023-12-20 at 5 14 35 PM](https://github.com/tahadarwesh1/swiftUi/assets/58812384/18d01476-24a6-4392-991b-f85077f924c4)
 
 ## Rules/Requirements given by 100 Days of SwiftUI 
 
