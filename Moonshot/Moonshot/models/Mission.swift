@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct Mission: Codable , Identifiable {
+struct Mission : Hashable, Codable , Identifiable , Equatable {
+    static func == (lhs: Mission, rhs: Mission) -> Bool {
+        return lhs.id == rhs.id
+            && lhs.launchDate == rhs.launchDate
+            && lhs.crew == rhs.crew
+            && lhs.description == rhs.description
+    }
+    
     let id: Int
     let crew: [Crew]
     let description: String
@@ -23,6 +30,6 @@ struct Mission: Codable , Identifiable {
     }
 }
 
-struct Crew: Codable {
+struct Crew: Codable, Hashable {
     let name, role: String
 }

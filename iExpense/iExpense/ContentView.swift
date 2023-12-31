@@ -53,14 +53,14 @@ struct ContentView: View{
             }
             .navigationTitle("IExpense")
             .toolbar {
-                Button("Add Expense") {
-                    showingSheet = true
+                NavigationLink(destination: AddView(expenses: expenses)){
+                    Text("Add Expense")
                 }
             }
         }
-        .sheet(isPresented: $showingSheet){
-            AddView(expenses: expenses)
-        }
+//        .sheet(isPresented: $showingSheet){
+//            AddView(expenses: expenses)
+//        }
     }
     
     func deleteItem(at offsets : IndexSet) {

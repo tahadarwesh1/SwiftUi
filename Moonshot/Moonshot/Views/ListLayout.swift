@@ -13,9 +13,7 @@ struct ListLayout: View {
     
     var body: some View {
         ForEach(missions){ mission in
-            NavigationLink {
-                MissionView(mission: mission , astronauts: astronauts)
-            } label: {
+            NavigationLink(value: mission) {
                 HStack {
                     VStack {
                         Image(mission.image)
@@ -38,7 +36,11 @@ struct ListLayout: View {
                 .frame(maxWidth: .infinity, maxHeight:.infinity)
                 .clipShape(.rect(cornerRadius: 10))
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(.lightBackGround))
+                .navigationDestination(for: Mission.self){ mission in
+                    MissionView(mission: mission , astronauts: astronauts)
+                }
             }
+            
         }
         .padding([.horizontal , .bottom])
     }

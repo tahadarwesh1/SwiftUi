@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct CrewMember {
+struct CrewMember : Codable , Hashable{
+    static func == (lhs: CrewMember, rhs: CrewMember) -> Bool {
+       return lhs.astronaut == rhs.astronaut
+        && lhs.role == rhs.role
+    }
+    
     let role : String
     let astronaut : Astronaut
 }

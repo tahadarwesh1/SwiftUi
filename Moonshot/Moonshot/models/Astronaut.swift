@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Astronaut: Codable , Identifiable {
+struct Astronaut: Codable , Identifiable , Hashable {
     let id, name, description: String
 }

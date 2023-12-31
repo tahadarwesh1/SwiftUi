@@ -17,9 +17,7 @@ struct GridLayout: View {
     var body: some View {
         LazyVGrid(columns: columns) {
             ForEach(missions){ mission in
-                NavigationLink {
-                    MissionView(mission: mission , astronauts: astronauts)
-                } label: {
+                NavigationLink(value: mission) {
                     VStack {
                         Image(mission.image)
                             .resizable()
@@ -40,7 +38,11 @@ struct GridLayout: View {
                     }
                     .clipShape(.rect(cornerRadius: 10))
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(.lightBackGround))
+                    .navigationDestination(for: Mission.self) { mission in
+                        MissionView(mission: mission , astronauts: astronauts)
+                    }
                 }
+                
             }
         }
         .padding([.horizontal , .bottom])
